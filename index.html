@@ -7,46 +7,147 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="sidebar"> 
+    <aside class="sidebar"> 
         <div class="sidebar-header">
-            <h1><img src="./images/sidebar/view-dashboard.svg" alt="Dashboard icon" width="60" height="60">Dashboard</h1>   
+            <h1><img src="./images/sidebar/view-dashboard.svg" alt="" width="60" height="60">Dashboard</h1>   
         </div>
-        <div class="sidebar-main">
-            <h2><img src="./images/sidebar/main-buttons/home-variant-outline.svg" alt="Home icon" width="30" height="30">Home</h2>
-            <h2><img src="./images/sidebar/main-buttons/profile.svg" alt="Profile icon" width="30" height="30">Profile</h2>
-            <h2><img src="./images/sidebar/main-buttons/message.svg" alt="Message icon" width="30" height="30">Messages</h2>
-            <h2><img src="./images/sidebar/main-buttons/history.svg" alt="History icon" width="30" height="30">History</h2>
-            <h2><img src="./images/sidebar/main-buttons/tasks.svg" alt="Tasks icon" width="30" height="30">Tasks</h2>
-            <h2><img src="./images/sidebar/main-buttons/communities.svg" alt="Communities icon" width="30" height="30">Communities</h2>
-        </div>
-        <div class="sidebar-additional">
-            <h2><img src="./images/sidebar/additional-buttons/settings.svg" alt="Settings icon" width="30" height="30">Settings</h2>
-            <h2><img src="./images/sidebar/additional-buttons/support.svg" alt="Support icon" width="30" height="30">Support</h2>
-            <h2><img src="./images/sidebar/additional-buttons/privacy.svg" alt="Privacy icon" width="30" height="30">Privacy</h2>
-        </div>
-    </div>
-    <div class="header">
+        <nav class="sidebar-main" aria-label="Main navigation">
+            <a href="#"><img src="./images/sidebar/main-buttons/home-variant-outline.svg" alt="" width="30" height="30">Home</a>
+            <a href="#"><img src="./images/sidebar/main-buttons/profile.svg" alt="" width="30" height="30">Profile</a>
+            <a href="#"><img src="./images/sidebar/main-buttons/message.svg" alt="" width="30" height="30">Messages</a>
+            <a href="#"><img src="./images/sidebar/main-buttons/history.svg" alt="" width="30" height="30">History</a>
+            <a href="#"><img src="./images/sidebar/main-buttons/tasks.svg" alt="" width="30" height="30">Tasks</a>
+            <a href="#"><img src="./images/sidebar/main-buttons/communities.svg" alt="" width="30" height="30">Communities</a>
+        </nav>
+        <nav class="sidebar-additional" aria-label="Additional navigation">
+            <a href="#"><img src="./images/sidebar/additional-buttons/settings.svg" alt="" width="30" height="30">Settings</a>
+            <a href="#"><img src="./images/sidebar/additional-buttons/support.svg" alt="" width="30" height="30">Support</a>
+            <a href="#"><img src="./images/sidebar/additional-buttons/privacy.svg" alt="" width="30" height="30">Privacy</a>
+        </nav>
+    </aside>
+    <header class="header">
         <div class="search">
-            <img src="./images/other/search.svg" alt="Privacy icon" width="30" height="30"><input type="text">
+            <img src="./images/other/search.svg" alt="" width="30" height="30"><input type="search" aria-label="Search">
         </div>
         <div class="greeting">
             <div>Hi there,</div>
             <h2><img src="./images/profile-pictures/elliot.jpg" alt="Profile picture of Elliot Alderson" width="50" height="50">Elliot Alderson</h2>
         </div>
         <div class="profile-shortcut">
-            <img src="./images/other/bell.svg" alt="Profile picture of Elliot Alderson" width="50" height="50">
-            <span><img src="./images/profile-pictures/elliot.jpg" alt="Profile picture of Elliot Alderson" width="50" height="50">Elliot Alderson</span>
+            <img src="./images/other/bell.svg" alt="Notifications" width="50" height="50">
+            <span><img src="./images/profile-pictures/elliot.jpg" alt="" width="50" height="50">Elliot Alderson</span>
         </div>
         <div class="actions">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+            <button type="button">New</button>
+            <button type="button">Upload</button>
+            <button type="button">Share</button>
         </div>
-    </div>
+    </header>
 
-    <div class="content">
-
-    </div>
-
+    <main class="content">
+        <h2>Your Projects</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Some dummy text</h3>
+                <p>Some more dummy text. Pretend there are a lot of sense. Be impressed.</p>
+                <div class="card-actions">
+                    <img src="./images/cards/star.svg" alt="Star icon" width="30" height="30">
+                    <img src="./images/cards/eye.svg" alt="Eye icon" width="30" height="30">
+                    <img src="./images/cards/fork.svg" alt="Fork icon" width="30" height="30">
+                </div>
+            </article>
+            <article class="card">
+                <h3>Some dummy text</h3>
+                <p>Some more dummy text. Pretend there are a lot of sense. Be impressed.</p>
+                <div class="card-actions">
+                    <img src="./images/cards/star.svg" alt="Star icon" width="30" height="30">
+                    <img src="./images/cards/eye.svg" alt="Eye icon" width="30" height="30">
+                    <img src="./images/cards/fork.svg" alt="Fork icon" width="30" height="30">
+                </div>
+            </article>
+            <article class="card">
+                <h3>Some dummy text</h3>
+                <p>Some more dummy text. Pretend there are a lot of sense. Be impressed.</p>
+                <div class="card-actions">
+                    <img src="./images/cards/star.svg" alt="Star icon" width="30" height="30">
+                    <img src="./images/cards/eye.svg" alt="Eye icon" width="30" height="30">
+                    <img src="./images/cards/fork.svg" alt="Fork icon" width="30" height="30">
+                </div>
+            </article>
+            <article class="card">
+                <h3>Some dummy text</h3>
+                <p>Some more dummy text. Pretend there are a lot of sense. Be impressed.</p>
+                <div class="card-actions">
+                    <img src="./images/cards/star.svg" alt="Star icon" width="30" height="30">
+                    <img src="./images/cards/eye.svg" alt="Eye icon" width="30" height="30">
+                    <img src="./images/cards/fork.svg" alt="Fork icon" width="30" height="30">
+                </div>
+            </article>
+            <article class="card">
+                <h3>Some dummy text</h3>
+                <p>Some more dummy text. Pretend there are a lot of sense. Be impressed.</p>
+                <div class="card-actions">
+                    <img src="./images/cards/star.svg" alt="Star icon" width="30" height="30">
+                    <img src="./images/cards/eye.svg" alt="Eye icon" width="30" height="30">
+                    <img src="./images/cards/fork.svg" alt="Fork icon" width="30" height="30">
+                </div>
+            </article>
+            <article class="card">
+                <h3>Some dummy text</h3>
+                <p>Some more dummy text. Pretend there are a lot of sense. Be impressed.</p>
+                <div class="card-actions">
+                    <img src="./images/cards/star.svg" alt="Star icon" width="30" height="30">
+                    <img src="./images/cards/eye.svg" alt="Eye icon" width="30" height="30">
+                    <img src="./images/cards/fork.svg" alt="Fork icon" width="30" height="30">
+                </div>
+            </article>
+        </div>
+        <section class="announcements">
+            <h2>Announcements</h2>
+            <article class="article">
+                <h3>Some announcement</h3>
+                <p>Some text under announcement. Some more dummy text. Pretend there are a lot of sense. Be impressed.</p>
+            </article>
+            <article class="article">
+                <h3>Some announcement</h3>
+                <p>Some text under announcement. Some more dummy text. Pretend there are a lot of sense. Be impressed.</p>
+            </article>
+            <article class="article">
+                <h3>Some announcement</h3>
+                <p>Some text under announcement. Some more dummy text. Pretend there are a lot of sense. Be impressed.</p>
+            </article>
+        </section>
+        <section class="trending">
+            <h2>Trending</h2>
+            <div class="profile">
+                <img src="./images/profile-pictures/darlene-alderson.png" alt="Darlene Alderson profile picture" width="30" height="30">
+                <div class="profile-info">
+                    <p>@darlene</p>
+                    <p>fsociety member</p>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="./images/profile-pictures/leslie-romero.png" alt="Leslie Romero profile picture" width="30" height="30">
+                <div class="profile-info">
+                    <p>@leslie</p>
+                    <p>fsociety member</p>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="./images/profile-pictures/mr-robot.jpg" alt="Mr.Robot profile picture" width="30" height="30">
+                <div class="profile-info">
+                    <p>@mr.robot</p>
+                    <p>fsociety leader</p>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="./images/profile-pictures/sunil-markesh.png" alt="Sunil Markesh profile picture" width="30" height="30">
+                <div class="profile-info">
+                    <p>@sunil</p>
+                    <p>fsociety member</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
