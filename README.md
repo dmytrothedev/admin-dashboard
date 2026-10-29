@@ -13,7 +13,6 @@ The layout will include a sidebar, header, and main content area with project ca
 - HTML5
 - CSS3
 - CSS Grid
-- Flexbox (where appropriate)
 
 ## Project Goals
 
