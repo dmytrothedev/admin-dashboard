@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr;
+}
+
+.sidebar{
+    display: grid;
+    grid-area: 1/1/3/2;
+
+    background-color: red;
+}
+
+.header {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 3;
+
+    background-color: green;
+}
+
+.content {
+    display: grid;
+    grid-area: 2 / 2 / 3 / 3;
+
+    background-color: blue;
+}
