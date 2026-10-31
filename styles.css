@@ -122,7 +122,77 @@ img[src$=".svg"] {
 .content {
     display: grid;
     grid-area: 2 / 2 / 3 / 3;
-
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    padding: 1vw;
+    gap: 1vw;
     background-color: blue;
 }
 
+.content .label1{
+    width: fit-content;
+    height: fit-content;
+    grid-area: 1/1/2/2;
+}
+
+.content .label2{
+    width: fit-content;
+    height: fit-content;
+    grid-area: 1/2/2/3;
+}
+
+.cards{
+    display: grid;
+    grid-area: 2/1/4/2;
+    gap: 1vw;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr))
+}
+
+.card{
+    background-color: blueviolet;
+}
+
+.announcements{
+    display: grid;
+    grid-area: 2/2/3/3;
+
+    background-color: coral;
+    align-items: center;
+    padding: 2vw;
+}
+
+.trending{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-area: 3/2/4/3;
+    background-color: darkgoldenrod;
+
+    align-items: center;
+    padding: 2vw;
+}
+
+
+.trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    align-content: start;
+    gap: 20px;
+    padding: 2vw;
+    background-color: darkgoldenrod;
+}
+
+.trending > h2 {
+    grid-row: 1;
+}
+
+.profile-darlene,
+.profile-leslie,
+.profile-robot,
+.profile-sunil {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
