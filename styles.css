@@ -141,16 +141,28 @@ img[src$=".svg"] {
     grid-area: 1/2/2/3;
 }
 
-.cards{
+.cards {
     display: grid;
-    grid-area: 2/1/4/2;
-    gap: 1vw;
+    grid-area: 2 / 1 / 4 / 2;
     grid-template-columns: repeat(2, minmax(150px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr))
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    gap: 1vw;
 }
 
-.card{
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+
     background-color: blueviolet;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 .announcements{
@@ -196,3 +208,5 @@ img[src$=".svg"] {
     align-items: center;
     gap: 12px;
 }
+
+
